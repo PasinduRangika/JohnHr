@@ -181,7 +181,6 @@ h6 {
 .section-footer__footer-navigation {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 .section-footer__social-media {
@@ -207,4 +206,30 @@ h6 {
   justify-content: start;
   align-items: start;
   gap: 70px;
+}
+/* section-about */
+.section-about {
+  padding: 60px 0px;
+}
+.section-about__images {
+  display: flex;
+  justify-content: space-between;
+}
+.section-about__img-wrap {
+  width: 49%;
+}
+
+.section-about__img-wrap img {
+  width: 100%;
+}
+.section-about__public-collection-title {
+  padding: 40px 0px;
+}
+/* section-contact */
+.section-contact {
+  padding: 60px;
+}
+.section-contact__social-link {
+  display: flex;
+  gap: 3px;
 }
