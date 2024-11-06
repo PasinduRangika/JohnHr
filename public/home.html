@@ -416,68 +416,6 @@
         </div>
       </div>
       <script>
-        // document.addEventListener("DOMContentLoaded", function () {
-        //   const slides = Array.from(document.querySelectorAll(".section-coach__content-side > .section-coach__slide"));
-        //   const testimonials = Array.from(
-        //     document.querySelectorAll(".section-coach__profile-side > .section-coach__testimonial")
-        //   );
-        //   const prevButton = document.getElementById("prev-slide");
-        //   const nextButton = document.getElementById("next-slide");
-        //   let currentIndex = 0;
-        //   let slideInterval;
-
-        //   function updateSlider(direction) {
-        //     slides.forEach((slide, i) => {
-        //       slide.classList.remove("active", "exit-left", "exit-right");
-
-        //       if (i === currentIndex) {
-        //         slide.classList.add("active");
-        //       } else if (direction === "next" && i === (currentIndex + 1 + slides.length) % slides.length) {
-        //         slide.classList.add("exit-left");
-        //       } else if (direction === "prev" && i === (currentIndex + 1) % slides.length) {
-        //         slide.classList.add("exit-right");
-        //       }
-        //     });
-
-        //     testimonials.forEach((testimonial, i) => {
-        //       testimonial.classList.toggle("active", i === currentIndex);
-        //     });
-        //   }
-
-        //   function goToNextSlide() {
-        //     currentIndex = (currentIndex + 1) % slides.length;
-        //     updateSlider("next");
-        //   }
-
-        //   function goToPreviousSlide() {
-        //     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        //     updateSlider("prev");
-        //   }
-
-        //   function startAutoSlide() {
-        //     slideInterval = setInterval(goToNextSlide, 5000);
-        //   }
-
-        //   function stopAutoSlide() {
-        //     clearInterval(slideInterval);
-        //   }
-
-        //   prevButton.addEventListener("click", () => {
-        //     stopAutoSlide();
-        //     goToPreviousSlide();
-        //     startAutoSlide();
-        //   });
-
-        //   nextButton.addEventListener("click", () => {
-        //     stopAutoSlide();
-        //     goToNextSlide();
-        //     startAutoSlide();
-        //   });
-
-        //   // Initialize slider
-        //   updateSlider("next");
-        //   startAutoSlide();
-        // });
         document.addEventListener("DOMContentLoaded", function () {
           const slides = Array.from(document.querySelectorAll(".section-coach__content-side > .section-coach__slide"));
           const testimonials = Array.from(
@@ -541,9 +479,163 @@
         });
       </script>
     </section>
+    <section class="section-form">
+      <div class="section-form__side section-form__side-img">
+        <img src="../wp-content/home_contact_us.jpg" alt="" />
+      </div>
+      <div class="section-form__side section-form__form-contact">
+        <h2>For more information and to book john</h2>
+        <div class="section-form__contact-form">contact form here....</div>
+      </div>
+    </section>
+    <section class="section-social-media">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2>Facebook</h2>
+            <div>
+              <!-- <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FJohnLehrFanpage%2F&amp;tabs=timeline&amp;width=340&amp;height=500&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId"
+                width="340"
+                height="500"
+                style="border: none; overflow: hidden"
+                scrolling="no"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe> -->
+            </div>
+          </div>
+          <div class="col-6"><h2>Instagram</h2></div>
+        </div>
+      </div>
+    </section>
     <footer>
       <section class="section-footer">
-        <div class="container"></div>
+        <div class="container">
+          <div class="row">
+            <div class="section-footer__top">
+              <div class="row justify-content-between">
+                <div class="col-6 section-footer__logo-wrap">
+                  <a class="footer-logo" href="https://johnlehr.com/"
+                    ><img src="https://johnlehr.com/wp-content/themes/johnlehr/img/global/footer_logo.png"
+                  /></a>
+                  <a href="mailto:john@howler.tv" class="section-footer__mail">john@howler.tv</a>
+                </div>
+                <div class="col-6 section-footer__media-wrap" id="social-media-wpr">
+                  <div class="section-footer__righ-top-container">
+                    <small>Follow us!</small>
+                    <div>
+                      <span id="media_image-6" class="widget widget_media_image"
+                        ><a href="https://twitter.com/@johnlehr"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/twt_icon.png"
+                            class="image wp-image-164 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-2" class="widget widget_media_image"
+                        ><a href="https://www.instagram.com/johnhenryhoyle/"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/instagram_icon.png"
+                            class="image wp-image-165 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-3" class="widget widget_media_image"
+                        ><a href="https://www.facebook.com/JohnLehrFanpage"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/fb_icon.png"
+                            class="image wp-image-166 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-5" class="widget widget_media_image"
+                        ><a href="https://www.youtube.com/channel/UCyhBmEMJ0q4OQ43vDcFNhUg"
+                          ><img
+                            width="35"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/youtube_icon.png"
+                            class="image wp-image-178 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer__bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 justify-content-center d-flex">
+                    <ul id="menu-footer-navigation" class="section-footer__navigation-ul">
+                      <li
+                        id="menu-item-748"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-733 current_page_item menu-item-748"
+                      >
+                        <a href="" aria-current="page" class="active">Home</a>
+                      </li>
+                      <li
+                        id="menu-item-232"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"
+                      >
+                        <a href="">Television/Film</a>
+                      </li>
+                      <li
+                        id="menu-item-177"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"
+                      >
+                        <a href="">Stand Up Comedy</a>
+                      </li>
+                      <li
+                        id="menu-item-759"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-759"
+                      >
+                        <a href="">Cold Sober Comedy</a>
+                      </li>
+                      <li
+                        id="menu-item-85"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"
+                      >
+                        <a href="">Coaching</a>
+                      </li>
+                      <li
+                        id="menu-item-769"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"
+                      >
+                        <a href="">Bio</a>
+                      </li>
+                      <li
+                        id="menu-item-597"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-597"
+                      >
+                        <a href="">Press</a>
+                      </li>
+                      <li
+                        id="menu-item-679"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"
+                      >
+                        <a href="">Sitemap</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </footer>
     <script>
