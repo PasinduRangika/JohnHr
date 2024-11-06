@@ -203,6 +203,14 @@
               currentIndex = 1;
               sliderWrapper.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
             }
+            // Manually update active class to ensure correct image selection
+            images.forEach((img, index) => {
+              if (index === (currentIndex - 1) % slides.length) {
+                img.classList.add("active");
+              } else {
+                img.classList.remove("active");
+              }
+            });
           }
 
           // Go to the next slide
@@ -306,6 +314,232 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="section-testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="section-testimonials__profile-side">
+            <span>
+              <img src="../wp-content/nancy_zintak_img.png" alt="" />
+            </span>
+          </div>
+          <div class="section-testimonials__content-side">
+            <span class="section-testimonials__up-coma">
+              <img src="../wp-content/up_coma.png" alt="" />
+            </span>
+            <p>
+              John Lehr has headlined Caron Treatment Center’s Sober St. Paddy’s Day Comedy Night for two years in a row
+              and brought the house down both times. Hundreds have enjoyed Lehr’s imaginative mix of humor that
+              alternates between bawdy and brainy, inspired and slapstick. Lehr weaves together over-the-top stories of
+              his seemingly endless “rock bottoms” that literally leave you laughing so hard you miss half of the story.
+              He combines physical humor with dramatic pauses and the kind of narrative story-telling hilarity that
+              comics today should do more of – John Lehr’s show is ridiculous and true and resonates with those who are
+              sober, those who aren’t, and those who should be.
+            </p>
+            <div class="section-testimonials__testi-client-details">
+              <h4>Nancy Zintak</h4>
+              <p>Regional Vice President, Caron Treatment Centers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-coach">
+      <div class="container">
+        <div class="row section-coach__first-row">
+          <div class="col-6">
+            <h4 class="section-coach__title">Hollywood Coach</h4>
+            <small class="section-coach__des-mini">Affordable One-on-One industry coaching with John!</small>
+            <p class="section-coach__des">
+              With 20 years experience pitching, writing, showrunning, producing and acting John is available to help
+              you develop and pitch your projects. Whether you are are new to the biz or looking for some new insights,
+              have your people call John’s people… or just click below (probably more efficient).
+            </p>
+            <a href="" class="section-films__more-info-btn section-moreinfo1__btn">More info & Video</a>
+          </div>
+          <div class="col-6">
+            <img src="../wp-content/hollywood_coach_img.jpg" alt="" class="section-coach__side-img" />
+          </div>
+        </div>
+        <div class="row section-coach__second-row">
+          <div class="section-coach__profile-side">
+            <span class="section-coach__testimonial section-coach__testimonial-1 active">
+              <img src="../wp-content/testimonials_img_2.png" alt="" />
+            </span>
+            <span class="section-coach__testimonial section-coach__testimonial-2">
+              <img src="../wp-content/testimonials_img_1.png" alt="" />
+            </span>
+          </div>
+          <div class="section-coach__middle-line"></div>
+          <div class="section-coach__content-side">
+            <div class="section-coach__slide section-coach__slide-1 active">
+              <span class="section-coach__up-coma">
+                <img src="../wp-content/up_coma.png" alt="" />
+              </span>
+              <p>
+                We couldn't be more thrilled that John is on our team! He is an expert in his field as creator and his
+                knowledge is invaluable. What he has taught us about creating, pitching, logistics, and negotiating in
+                the short time we've worked together would have taken us years to figure out on our own - and these
+                things are not taught in school! The best part - he TRULY wants us to succeed in this business! John has
+                consistently proven that he will do anything he can to support us in selling our first episodic series.
+                So much so - we'd like to give him a producer credit when that happens! Just you wait! John - you'll
+                never get rid of us!
+              </p>
+              <div class="section-coach__client-details">
+                <h4>Meredyth Yund and Garrett Bennett</h4>
+                <p>Echo Rock Productions</p>
+              </div>
+            </div>
+            <div class="section-coach__slide section-coach__slide-2">
+              <span class="section-coach__up-coma">
+                <img src="../wp-content/up_coma.png" alt="" />
+              </span>
+              <p>
+                Working with John is an absolute joy, he is very talented and has accomplished a lot in his career, but
+                he is always willing to help in anyone in need of his expertise at any level. I highly recommend him as
+                you will be getting the best mentor out there
+              </p>
+              <div class="section-coach__client-details">
+                <h4>David Johnson</h4>
+                <p>Screenwriter</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-coach__controls">
+            <a class="carousel-control-prev" id="prev-slide" href="#quote-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" id="next-slide" href="#quote-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <script>
+        // document.addEventListener("DOMContentLoaded", function () {
+        //   const slides = Array.from(document.querySelectorAll(".section-coach__content-side > .section-coach__slide"));
+        //   const testimonials = Array.from(
+        //     document.querySelectorAll(".section-coach__profile-side > .section-coach__testimonial")
+        //   );
+        //   const prevButton = document.getElementById("prev-slide");
+        //   const nextButton = document.getElementById("next-slide");
+        //   let currentIndex = 0;
+        //   let slideInterval;
+
+        //   function updateSlider(direction) {
+        //     slides.forEach((slide, i) => {
+        //       slide.classList.remove("active", "exit-left", "exit-right");
+
+        //       if (i === currentIndex) {
+        //         slide.classList.add("active");
+        //       } else if (direction === "next" && i === (currentIndex + 1 + slides.length) % slides.length) {
+        //         slide.classList.add("exit-left");
+        //       } else if (direction === "prev" && i === (currentIndex + 1) % slides.length) {
+        //         slide.classList.add("exit-right");
+        //       }
+        //     });
+
+        //     testimonials.forEach((testimonial, i) => {
+        //       testimonial.classList.toggle("active", i === currentIndex);
+        //     });
+        //   }
+
+        //   function goToNextSlide() {
+        //     currentIndex = (currentIndex + 1) % slides.length;
+        //     updateSlider("next");
+        //   }
+
+        //   function goToPreviousSlide() {
+        //     currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        //     updateSlider("prev");
+        //   }
+
+        //   function startAutoSlide() {
+        //     slideInterval = setInterval(goToNextSlide, 5000);
+        //   }
+
+        //   function stopAutoSlide() {
+        //     clearInterval(slideInterval);
+        //   }
+
+        //   prevButton.addEventListener("click", () => {
+        //     stopAutoSlide();
+        //     goToPreviousSlide();
+        //     startAutoSlide();
+        //   });
+
+        //   nextButton.addEventListener("click", () => {
+        //     stopAutoSlide();
+        //     goToNextSlide();
+        //     startAutoSlide();
+        //   });
+
+        //   // Initialize slider
+        //   updateSlider("next");
+        //   startAutoSlide();
+        // });
+        document.addEventListener("DOMContentLoaded", function () {
+          const slides = Array.from(document.querySelectorAll(".section-coach__content-side > .section-coach__slide"));
+          const testimonials = Array.from(
+            document.querySelectorAll(".section-coach__profile-side > .section-coach__testimonial")
+          );
+          const prevButton = document.getElementById("prev-slide");
+          const nextButton = document.getElementById("next-slide");
+          let currentIndex = 0;
+          let slideInterval;
+
+          function updateSlider(direction) {
+            slides.forEach((slide, i) => {
+              slide.classList.remove("active", "exit-left", "exit-right");
+
+              if (i === currentIndex) {
+                slide.classList.add("active");
+              } else {
+                // Apply exit-right class for inactive slides to animate in the desired direction
+                slide.classList.add("exit-right");
+              }
+            });
+
+            testimonials.forEach((testimonial, i) => {
+              testimonial.classList.toggle("active", i === currentIndex);
+            });
+          }
+
+          function goToNextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider("next");
+          }
+
+          function goToPreviousSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider("prev");
+          }
+
+          function startAutoSlide() {
+            slideInterval = setInterval(goToNextSlide, 5000);
+          }
+
+          function stopAutoSlide() {
+            clearInterval(slideInterval);
+          }
+
+          prevButton.addEventListener("click", () => {
+            stopAutoSlide();
+            goToPreviousSlide();
+            startAutoSlide();
+          });
+
+          nextButton.addEventListener("click", () => {
+            stopAutoSlide();
+            goToNextSlide();
+            startAutoSlide();
+          });
+
+          // Initialize slider
+          updateSlider("next");
+          startAutoSlide();
+        });
+      </script>
     </section>
     <footer>
       <section class="section-footer">
