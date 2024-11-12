@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johnlehr</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.adobe.com/libraries/1AHNS0CQBJFSHYC3PANEFELQNPNFFF.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./css/xxl.css" />
+    <link rel="stylesheet" href="./css/xl.css" />
+    <link rel="stylesheet" href="./css/lg.css" />
+    <link rel="stylesheet" href="./css/md.css" />
+    <link rel="stylesheet" href="./css/sm.css" />
+    <link rel="stylesheet" href="./css/xs.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../wp-content/johnlehr_logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Television/Film</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Stand Up Comedy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Cold Sober Comedy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Coaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Press</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="sup-herosection">
+      <img src="../wp-content/uploads/standup_comedy_banner.jpg" alt="" />
+    </section>
+    <section class="suc-videosection">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <div class="suc-videosection__video video-overlay">
+              <iframe
+                id="video-1"
+                src="https://www.youtube.com/embed/Dwvda_bhoto?list=PLdmld16EENXNy-HYnsH50jh0i6VFuTA-H?autoplay=1"
+                frameborder="0"
+                allowfullscreen=""
+                class="suc-videosection__video1"
+              ></iframe>
+              <img src="../wp-content/uploads/standup_popup_vd.jpg" alt="Stand up comedy" class="video-thumbnail" />
+            </div>
+            <div class="suc-videosection__text">
+              <p>Stand up comedy</p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="suc-videosection__video video-overlay">
+              <iframe
+                id="video-2"
+                src="https://www.youtube.com/embed/nCXDegdyBRQ?autoplay=1"
+                frameborder="0"
+                allowfullscreen=""
+                class="suc-videosection__video1"
+              ></iframe>
+              <img src="../wp-content/uploads/hosting_popup_vd.jpg" alt="Hosting" class="video-thumbnail" />
+            </div>
+            <div class="suc-videosection__text">
+              <p>Hosting</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll(".video-thumbnail").forEach((thumbnail) => {
+            thumbnail.addEventListener("click", function () {
+              const videoContainer = this.parentElement;
+              videoContainer.classList.add("active");
+            });
+          });
+        });
+      </script>
+    </section>
+    <section class="suc-fullgraycontainer">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="d-flex justify-content-center">
+            <h3>Original Geico Caveman and veteran TV comedian available for stand-up and Event Hosting</h3>
+          </div>
+          <div class="d-flex justify-content-center"><a href=""> TV appearances</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="suc-story">
+      <div class="container">
+        <div class="row">
+          <h3>
+            John Lehr’s likable personality and story-based comedy is fascinating, entertaining, uplifting and
+            hilarious.
+          </h3>
+          <p>
+            John is a comedic performer, writer and producer working in television, film and theater. Lehr starred as
+            Leslie Pool in “<a href="https://www.crackle.com/10-items-or-less">10 Items or Less,</a>” from Sony on TBS
+            for three seasons and recently starred as Sheriff Hoyle on Hulu’s original comedy western “<a
+              href="https://www.hulu.com/series/quick-draw-f15643e4-501e-44da-ac26-bbb3024bf9b1?&cmp=7958&utm_source=google&utm_medium=cpc&utm_campaign=BM+Search+TV+Shows&utm_term=&gclsrc=aw.ds&ds_rl=1263136&gclid=CjwKCAjwzJjrBRBvEiwA867byhS6A1b52uOX9Wq42tdPuC2_OnDTPHKJEW8tx5vbCNsmVDMoGHyYlBoCQUEQAvD_BwE"
+              >Quickdraw</a
+            >
+            ” for two seasons. Lehr also co-created, wrote and executive produced both series.
+          </p>
+          <p>
+            Lehr is one of the original
+            <a href="https://www.youtube.com/watch?v=0zTjxn-QSqc&list=PLdmld16EENXMIkdWCzuP3K1pVcNPMGAhi"
+              >Geico Cavemen</a
+            >
+            from the wildly successful commercial campaign. He appeared in dozens of spots, including the first
+            commercial as a caveman boom operator, the caveman in therapy with Talia Shire, the tennis spot with Billy
+            Jean King, Superbowl spots with Phil Simms and many
+            <a href="https://www.youtube.com/playlist?list=PLQaIse2T2CPHHxmL6qzO35u-HsQbhyWiV">more.</a> (click here for
+            John’s caveman spots)
+          </p>
+          <p>
+            Lehr’s critically acclaimed
+            <a href="https://soundcloud.com/user-122522911/sets/a-series-of-comedic-lectures">Comedic Lectures</a> solo
+            performances have had sold out runs in LA and New York. He is also a respected improvisational performer
+            having worked at the Organic Theater and Steppenwolf Theater in Chicago, the Montreal Comedy Festival,
+            Chicago Improvisational Festival and multiple venues in Los Angeles and New York. Lehr regularly performs
+            stand-up comedy and MC/Hosts events around the country.
+          </p>
+          <p>
+            A recovering alcoholic and drug addict, Lehr is a seasoned monologist and comedian who speaks openly about
+            his twenty plus years of sobriety. Under the banner “<a href="https://johnlehr.com/cold-sober-comedy/"
+              >Cold. Sober. Comedy.</a
+            >
+            ” Lehr performs and MC’s at fundraisers, non-profits and sober communities about his personal/career
+            struggles, his continuing sober journey and the importance of an authentic sense of humor. Lehr performs and
+            MC’s at corporate events, fundraisers and non-profits about his personal/career struggles, his continuing
+            sober journey and the importance of an authentic sense of humor.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <div class="suc-story__img-wrap first-row">
+              <img src="../wp-content/uploads/com_bio_image_1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="suc-story__img-wrap first-row">
+              <img src="../wp-content/uploads/com_bio_image_2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="suc-story__img-wrap"><img src="../wp-content/uploads/com_bio_image_3.jpg" alt="" /></div>
+          </div>
+          <div class="col-6">
+            <div class="suc-story__img-wrap"><img src="../wp-content/uploads/com_bio_image_5.jpg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="section-footer">
+        <div class="container">
+          <div class="row">
+            <div class="section-footer__top">
+              <div class="row justify-content-between">
+                <div class="col-6 section-footer__logo-wrap">
+                  <a class="footer-logo" href="https://johnlehr.com/"
+                    ><img src="https://johnlehr.com/wp-content/themes/johnlehr/img/global/footer_logo.png"
+                  /></a>
+                  <a href="mailto:john@howler.tv" class="section-footer__mail">john@howler.tv</a>
+                </div>
+                <div class="col-6 section-footer__media-wrap" id="social-media-wpr">
+                  <div class="section-footer__righ-top-container">
+                    <small>Follow us!</small>
+                    <div>
+                      <span id="media_image-6" class="widget widget_media_image"
+                        ><a href="https://twitter.com/@johnlehr"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/twt_icon.png"
+                            class="image wp-image-164 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-2" class="widget widget_media_image"
+                        ><a href="https://www.instagram.com/johnhenryhoyle/"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/instagram_icon.png"
+                            class="image wp-image-165 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-3" class="widget widget_media_image"
+                        ><a href="https://www.facebook.com/JohnLehrFanpage"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/fb_icon.png"
+                            class="image wp-image-166 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-5" class="widget widget_media_image"
+                        ><a href="https://www.youtube.com/channel/UCyhBmEMJ0q4OQ43vDcFNhUg"
+                          ><img
+                            width="35"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/youtube_icon.png"
+                            class="image wp-image-178 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer__bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 justify-content-center d-flex">
+                    <ul id="menu-footer-navigation" class="section-footer__navigation-ul">
+                      <li
+                        id="menu-item-748"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-733 current_page_item menu-item-748"
+                      >
+                        <a href="" aria-current="page" class="active">Home</a>
+                      </li>
+                      <li
+                        id="menu-item-232"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"
+                      >
+                        <a href="">Television/Film</a>
+                      </li>
+                      <li
+                        id="menu-item-177"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"
+                      >
+                        <a href="">Stand Up Comedy</a>
+                      </li>
+                      <li
+                        id="menu-item-759"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-759"
+                      >
+                        <a href="">Cold Sober Comedy</a>
+                      </li>
+                      <li
+                        id="menu-item-85"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"
+                      >
+                        <a href="">Coaching</a>
+                      </li>
+                      <li
+                        id="menu-item-769"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"
+                      >
+                        <a href="">Bio</a>
+                      </li>
+                      <li
+                        id="menu-item-597"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-597"
+                      >
+                        <a href="">Press</a>
+                      </li>
+                      <li
+                        id="menu-item-679"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"
+                      >
+                        <a href="">Sitemap</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            navLinks.forEach((link) => link.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.location.href === "http://127.0.0.1:5502/public/standupcomedy.html") {
+          const navbar = document.querySelector(".navbar");
+          const navLinks = document.querySelectorAll(".nav-link");
+          const logo = document.querySelector(".navbar-brand img");
+          navbar.classList.add("transparent");
+          navLinks.forEach((link) => {
+            link.classList.add("white");
+          });
+          logo.src = "../wp-content/uploads/johnlehr_logo_white.png";
+        }
+      });
+    </script>
+  </body>
+</html>
