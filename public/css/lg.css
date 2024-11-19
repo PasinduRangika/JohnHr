@@ -45,4 +45,21 @@
     font-size: 60px;
     color: var(--tertiary-text-color);
   }
+  .sup-herosection img {
+    width: 100%;
+    height: auto;
+  }
+  .sup-herosection {
+    margin-top: -90px;
+  }
+  .navbar {
+    padding: 0px;
+  }
+  .suc-story .row {
+    padding: 20px 50px;
+  }
+  .stand-up__img {
+    width: 100%;
+    height: auto;
+  }
 }

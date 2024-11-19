@@ -45,4 +45,10 @@
   .section-tvshow__bottom-card {
     width: 100%;
   }
+  .sup-herosection {
+    padding-top: 80px;
+  }
+  .navbar.transparent {
+    background-color: black !important;
+  }
 }

@@ -50,7 +50,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <a class="navbar-toggler-icon"></a>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -81,39 +81,45 @@
       </nav>
     </header>
     <section class="sup-herosection">
-      <img src="../wp-content/uploads/standup_comedy_banner.jpg" alt="" />
-    </section>
-    <section class="suc-videosection">
-      <div class="container">
+      <img src="../wp-content/uploads/cold_sober_comedey_banner_img.jpg" alt="" class="cold-banner" />
+      <div class="container all-container">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="suc-videosection__video video-overlay">
+          <div class="title-container">
+            <h1 class="title">
+              cold. <br />
+              Sober. <br />
+              Comedy. <br />
+            </h1>
+          </div>
+          <div>
+            <p class="title-container-des">Comedy? Sobriety? Inspiration? <span>Yes.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="coldsober-graycolor-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-6">
+            <p class="des">
+              John Lehr speaks openly and honestly about his struggle with drugs and alcohol, his twenty plus years of
+              sobriety and his career in entertainment…
+            </p>
+          </div>
+          <div class="col-6">
+            <div class="video-wrap">
               <iframe
                 id="video-1"
-                src="https://www.youtube.com/embed/Dwvda_bhoto?list=PLdmld16EENXNy-HYnsH50jh0i6VFuTA-H?autoplay=1"
+                src="https://www.youtube.com/embed/TEZX4kl9_cQ"
                 frameborder="0"
                 allowfullscreen=""
-                class="suc-videosection__video1"
+                class="suc-videosection__video"
               ></iframe>
-              <img src="../wp-content/uploads/standup_popup_vd.jpg" alt="Stand up comedy" class="video-thumbnail" />
-            </div>
-            <div class="suc-videosection__text">
-              <p>Stand up comedy</p>
-            </div>
-          </div>
-          <div class="col-12 col-md-6">
-            <div class="suc-videosection__video video-overlay">
-              <iframe
-                id="video-2"
-                src="https://www.youtube.com/embed/nCXDegdyBRQ?autoplay=1"
-                frameborder="0"
-                allowfullscreen=""
-                class="suc-videosection__video1"
-              ></iframe>
-              <img src="../wp-content/uploads/hosting_popup_vd.jpg" alt="Hosting" class="video-thumbnail" />
-            </div>
-            <div class="suc-videosection__text">
-              <p>Hosting</p>
+              <img
+                src="https://johnlehr.com/wp-content/uploads/2018/08/home_video_img.png"
+                alt="Stand up comedy"
+                class="video-thumbnail"
+              />
             </div>
           </div>
         </div>
@@ -123,111 +129,116 @@
           document.querySelectorAll(".video-thumbnail").forEach((thumbnail) => {
             thumbnail.addEventListener("click", function () {
               const videoContainer = this.parentElement;
-              videoContainer.classList.add("active");
+              const iframe = videoContainer.querySelector("iframe");
+              iframe.style.display = "block";
+              this.style.display = "none";
             });
           });
         });
       </script>
     </section>
-    <section class="suc-fullgraycontainer">
+    <section class="coldsober-content-section">
       <div class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="d-flex justify-content-center">
-            <h3>Original Geico Caveman and veteran TV comedian available for stand-up and Event Hosting</h3>
-          </div>
-          <div class="d-flex justify-content-center"><a href=""> TV appearances</a></div>
-        </div>
-      </div>
-    </section>
-    <section class="suc-story">
-      <div class="container">
-        <div class="row">
-          <h3>
-            John Lehr’s likable personality and story-based comedy is fascinating, entertaining, uplifting and
-            hilarious.
-          </h3>
-          <p>
-            John is a comedic performer, writer and producer working in television, film and theater. Lehr starred as
-            Leslie Pool in “<a href="https://www.crackle.com/10-items-or-less">10 Items or Less,</a>” from Sony on TBS
-            for three seasons and recently starred as Sheriff Hoyle on Hulu’s original comedy western “<a
-              href="https://www.hulu.com/series/quick-draw-f15643e4-501e-44da-ac26-bbb3024bf9b1?&cmp=7958&utm_source=google&utm_medium=cpc&utm_campaign=BM+Search+TV+Shows&utm_term=&gclsrc=aw.ds&ds_rl=1263136&gclid=CjwKCAjwzJjrBRBvEiwA867byhS6A1b52uOX9Wq42tdPuC2_OnDTPHKJEW8tx5vbCNsmVDMoGHyYlBoCQUEQAvD_BwE"
-              >Quickdraw</a
-            >
-            ” for two seasons. Lehr also co-created, wrote and executive produced both series.
-          </p>
-          <p>
-            Lehr is one of the original
-            <a href="https://www.youtube.com/watch?v=0zTjxn-QSqc&list=PLdmld16EENXMIkdWCzuP3K1pVcNPMGAhi"
-              >Geico Cavemen</a
-            >
-            from the wildly successful commercial campaign. He appeared in dozens of spots, including the first
-            commercial as a caveman boom operator, the caveman in therapy with Talia Shire, the tennis spot with Billy
-            Jean King, Superbowl spots with Phil Simms and many
-            <a href="https://www.youtube.com/playlist?list=PLQaIse2T2CPHHxmL6qzO35u-HsQbhyWiV">more.</a> (click here for
-            John’s caveman spots)
-          </p>
-          <p>
-            Lehr’s critically acclaimed
-            <a href="https://soundcloud.com/user-122522911/sets/a-series-of-comedic-lectures">Comedic Lectures</a> solo
-            performances have had sold out runs in LA and New York. He is also a respected improvisational performer
-            having worked at the Organic Theater and Steppenwolf Theater in Chicago, the Montreal Comedy Festival,
-            Chicago Improvisational Festival and multiple venues in Los Angeles and New York. Lehr regularly performs
-            stand-up comedy and MC/Hosts events around the country.
-          </p>
-          <p>
-            A recovering alcoholic and drug addict, Lehr is a seasoned monologist and comedian who speaks openly about
-            his twenty plus years of sobriety. Under the banner “<a href="https://johnlehr.com/cold-sober-comedy/"
-              >Cold. Sober. Comedy.</a
-            >
-            ” Lehr performs and MC’s at fundraisers, non-profits and sober communities about his personal/career
-            struggles, his continuing sober journey and the importance of an authentic sense of humor. Lehr performs and
-            MC’s at corporate events, fundraisers and non-profits about his personal/career struggles, his continuing
-            sober journey and the importance of an authentic sense of humor.
-          </p>
-        </div>
-        <div class="row">
+        <div class="row coldsober-content-row">
           <div class="col-6">
-            <div class="suc-story__img-wrap first-row">
-              <img src="../wp-content/uploads/com_bio_image_1.jpg" alt="" />
+            <p class="left-des">
+              Part comedy act, part motivational speech, John’s journey overcoming his alcohol & drug addictions &
+              achieving his dream as a working actor & writer in Hollywood is fascinating, entertaining, uplifting and
+              hilarious…
+            </p>
+          </div>
+          <div class="col-6">
+            <p class="right-des">
+              <a>John</a> is a comedic performer, writer and producer working in television, film and theater. Lehr
+              starred as Leslie Pool in “<a>10 Items or Less,”</a> from Sony on TBS for three seasons and recently
+              starred as Sheriff Hoyle on Hulu’s original comedy western “<a> Quickdraw</a>” for two seasons. Lehr also
+              co-created, wrote and executive produced both series.
+            </p>
+            <p class="right-des">
+              Lehr is one of the <a>original Geico Cavemen</a> from the wildly successful commercial campaign. He
+              appeared in <a>dozens of spots</a>, including the first commercial as a caveman boom operator, the caveman
+              in therapy with Talia Shire, the tennis spot with Billy Jean King, Superbowl spots with Phil Simms and
+              many more.
+            </p>
+            <p class="right-des">
+              A recovering alcoholic and drug addict, John Lehr is a seasoned <a>monologist</a> and comedian who speaks
+              openly about his twenty plus years of sobriety.
+            </p>
+            <p class="right-des">
+              Under the banner “Cold. Sober. Comedy.” Lehr performs and MC’s at corporate events, fundraisers,
+              non-profits and sober communities about his personal/career struggles, his continuing sober journey and
+              the importance of an authentic sense of humor..
+            </p>
+            <p class="right-des">
+              This spring, Lehr was thrilled to debut his newest monologue “Wait, I Have to Give a Crap About Other
+              People?” at the Annual Sober St. Paddy’s Day Comedy Night for the Atlanta Caron Treatment Center.
+            </p>
+            <div class="button-wrap">
+              <a href="">John's full BIO</a>
+              <a href="">John's Television Appearances</a>
             </div>
-          </div>
-          <div class="col-6">
-            <div class="suc-story__img-wrap first-row">
-              <img src="../wp-content/uploads/com_bio_image_2.jpg" alt="" />
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="suc-story__img-wrap"><img src="../wp-content/uploads/com_bio_image_3.jpg" alt="" /></div>
-          </div>
-          <div class="col-6">
-            <div class="suc-story__img-wrap"><img src="../wp-content/uploads/com_bio_image_5.jpg" alt="" /></div>
-          </div>
-          <div class="col-12 d-flex justify-content-center">
-            <div class="d-flex justify-content-center suc-story__site-btn"><a href="">John's Full Bio</a></div>
           </div>
         </div>
       </div>
     </section>
-    <section class="stand-up">
+    <section class="contact-now-section">
       <div class="container">
         <div class="row">
-          <h2 class="stand-up__title">John Stands Up</h2>
-          <h4 class="stand-up__des">A stand-up comedy documentary and podcast on howler.tv!</h4>
+          <h3>Charity events. Corporate speaking. Sober communities. Universities.</h3>
+          <h1>Honest. Inspirational. Entertaining!</h1>
+          <a href="">Contact Now</a>
         </div>
-        <div class="row aligns-items-center justify-content-center">
-          <div class="col-5">
-            <div class="stand-up__left-container">
-              <img src="../wp-content/uploads/standup_comedy_img2.png" alt="" class="stand-up__img" />
-            </div>
-            <a href="" class="stand-up__link-click_a"> <p class="stand-up__link-click">click here to watch</p></a>
+      </div>
+    </section>
+    <section class="coldsober-testimonial-section">
+      <div class="container">
+        <div class="row section-testimonials__row v2">
+          <div class="section-testimonials__profile-side">
+            <span>
+              <img src="../wp-content/nancy_zintak_img.png" alt="" />
+            </span>
           </div>
-          <div class="col-5">
-            <div>
-              <img src="../wp-content/uploads/podcast_video_img2.png" alt="" class="stand-up__img" />
+          <div class="section-testimonials__content-side">
+            <span class="section-testimonials__up-coma">
+              <img src="../wp-content/up_coma.png" alt="" />
+            </span>
+            <p>
+              John Lehr has headlined Caron Treatment Center’s Sober St. Paddy’s Day Comedy Night for two years in a row
+              and brought the house down both times. Hundreds have enjoyed Lehr’s imaginative mix of humor that
+              alternates between bawdy and brainy, inspired and slapstick. Lehr weaves together over-the-top stories of
+              his seemingly endless “rock bottoms” that literally leave you laughing so hard you miss half of the story.
+              He combines physical humor with dramatic pauses and the kind of narrative story-telling hilarity that
+              comics today should do more of – John Lehr’s show is ridiculous and true and resonates with those who are
+              sober, those who aren’t, and those who should be.
+            </p>
+            <div class="section-testimonials__testi-client-details">
+              <h4>Nancy Zintak</h4>
+              <p>Regional Vice President, Caron Treatment Centers</p>
             </div>
-            <a href="" class="stand-up__link-click_a">
-              <p class="stand-up__link-click">Listen to the podcast here</p>
-            </a>
+          </div>
+        </div>
+        <div class="row section-testimonials__row">
+          <div class="section-testimonials__profile-side">
+            <span>
+              <img src="https://johnlehr.com/wp-content/themes/johnlehr/img/home/tim_rabolt_img.png" alt="" />
+            </span>
+          </div>
+          <div class="section-testimonials__content-side">
+            <span class="section-testimonials__up-coma">
+              <img src="../wp-content/up_coma.png" alt="" />
+            </span>
+            <p>
+              John Lehr was one of the highlights and most unique parts of our 10th National Collegiate Recovery
+              Conference in Boston. His show and his presence brought some much-needed laughs, insight, and energy.
+              Though there are a handful of recovery comedians out there, John stands in a league of his own. We wish we
+              knew about him earlier! He was incredibly approachable and spoke with countless attendees. He worked
+              around our schedule and was the perfect guest. I cannot recommend him enough and hope to have him at one
+              of our future events!
+            </p>
+            <div class="section-testimonials__testi-client-details">
+              <h4>Tim Rabolt</h4>
+              <p>Executive Director, Association of Recovery in Higher Education (ARHE)</p>
+            </div>
           </div>
         </div>
       </div>
@@ -257,7 +268,7 @@
                   <div class="section-footer__righ-top-container">
                     <small>Follow us!</small>
                     <div>
-                      <span id="media_image-6" class="widget widget_media_image"
+                      <a id="media_image-6" class="widget widget_media_image"
                         ><a href="https://twitter.com/@johnlehr"
                           ><img
                             width="25"
@@ -267,8 +278,8 @@
                             alt=""
                             style="max-width: 100%; height: auto"
                             decoding="async"
-                            loading="lazy" /></a></span
-                      ><span id="media_image-2" class="widget widget_media_image"
+                            loading="lazy" /></a></a
+                      ><a id="media_image-2" class="widget widget_media_image"
                         ><a href="https://www.instagram.com/johnhenryhoyle/"
                           ><img
                             width="25"
@@ -278,8 +289,8 @@
                             alt=""
                             style="max-width: 100%; height: auto"
                             decoding="async"
-                            loading="lazy" /></a></span
-                      ><span id="media_image-3" class="widget widget_media_image"
+                            loading="lazy" /></a></a
+                      ><a id="media_image-3" class="widget widget_media_image"
                         ><a href="https://www.facebook.com/JohnLehrFanpage"
                           ><img
                             width="25"
@@ -289,8 +300,8 @@
                             alt=""
                             style="max-width: 100%; height: auto"
                             decoding="async"
-                            loading="lazy" /></a></span
-                      ><span id="media_image-5" class="widget widget_media_image"
+                            loading="lazy" /></a></a
+                      ><a id="media_image-5" class="widget widget_media_image"
                         ><a href="https://www.youtube.com/channel/UCyhBmEMJ0q4OQ43vDcFNhUg"
                           ><img
                             width="35"
@@ -301,7 +312,7 @@
                             style="max-width: 100%; height: auto"
                             decoding="async"
                             loading="lazy" /></a
-                      ></span>
+                      ></a>
                     </div>
                   </div>
                 </div>
@@ -385,8 +396,8 @@
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         if (
-          window.location.href === "http://127.0.0.1:5502/public/standupcomedy.html#" ||
-          window.location.href === "http://127.0.0.1:5502/public/coldsobercomedy.html"
+          window.location.href === "http://127.0.0.1:5502/public/standupcomedy.html" ||
+          window.location.href === "http://127.0.0.1:5502/public/coldsobercomedy.html#"
         ) {
           const navbar = document.querySelector(".navbar");
           const navLinks = document.querySelectorAll(".nav-link");

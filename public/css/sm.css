@@ -124,4 +124,7 @@
   .section-tvshow__topcard {
     width: 50%;
   }
+  .suc-story .row {
+    padding: 20px 10px;
+  }
 }
