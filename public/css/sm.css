@@ -127,4 +127,29 @@
   .suc-story .row {
     padding: 20px 10px;
   }
+  .sup-herosection .title {
+    font-size: 36px;
+  }
+  .sup-herosection .title-container {
+    top: 50px;
+  }
+  .title-container-des {
+    position: absolute;
+    top: 250px;
+    font-size: 10px;
+  }
+  .coldsober-graycolor-section .des {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .coldsober-content-section .left-des {
+    text-align: center;
+  }
+  .coldsober-content-section .right-des {
+    text-align: center;
+  }
+  .coldsober-content-section .button-wrap a {
+    text-align: center;
+  }
 }

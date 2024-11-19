@@ -51,4 +51,7 @@
   .navbar.transparent {
     background-color: black !important;
   }
+  .coldsober-graycolor-section .des {
+    font-size: 16px;
+  }
 }
