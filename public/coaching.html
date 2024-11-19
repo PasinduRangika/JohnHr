@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johnlehr</title>
+    <meta name="robots" content="max-image-preview:large" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.adobe.com/libraries/1AHNS0CQBJFSHYC3PANEFELQNPNFFF.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="./css/xxl.css" />
+    <link rel="stylesheet" href="./css/xl.css" />
+    <link rel="stylesheet" href="./css/lg.css" />
+    <link rel="stylesheet" href="./css/md.css" />
+    <link rel="stylesheet" href="./css/sm.css" />
+    <link rel="stylesheet" href="./css/xs.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="../wp-content/johnlehr_logo.png" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Television/Film</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Stand Up Comedy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Cold Sober Comedy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Coaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link last" href="#">Press</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="section-coachinghero">
+      <img
+        src="https://johnlehr.com/wp-content/uploads/2018/09/standup_comedy_banner_img.jpg"
+        alt=""
+        class="section-coaching-img"
+      />
+      <div class="container">
+        <div class="row">
+          <div class="hero-title">
+            <h1>
+              Writers. <br />
+              Creators. <br />
+              Producers.
+            </h1>
+          </div>
+        </div>
+        <div class="hero-des">
+          <p>You've created it. Now what?</p>
+        </div>
+      </div>
+    </section>
+    <section class="coldsober-graycolor-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-center justify-content-lg-start">
+          <div class="col-12 col-md-6 d-flex justify-content-center justiy-content-md-start">
+            <p class="des">One-on-One coaching and consulting with John Lehr</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="video-wrap">
+              <iframe
+                id="video-1"
+                src="https://www.youtube.com/embed/VwmTNEi84po"
+                frameborder="0"
+                allowfullscreen=""
+                class="suc-videosection__video"
+              ></iframe>
+              <img
+                src="https://johnlehr.com/wp-content/uploads/2018/08/home_video_img.png"
+                alt="Stand up comedy"
+                class="video-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          document.querySelectorAll(".video-thumbnail").forEach((thumbnail) => {
+            thumbnail.addEventListener("click", function () {
+              const videoContainer = this.parentElement;
+              const iframe = videoContainer.querySelector("iframe");
+              iframe.style.display = "block";
+              this.style.display = "none";
+            });
+          });
+        });
+      </script>
+    </section>
+    <section class="coaching-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-5 d-flex justify-content-center">
+            <div class="img-wrap">
+              <img src="https://johnlehr.com/wp-content/uploads/2018/08/carrer_coaching_img.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-7">
+            <div>
+              <h2>Affordable entertainment career advice/coaching — from creation, to pitching, to production</h2>
+              <p>
+                John is a comedic performer, writer and producer working in television, film and theater. Lehr starred
+                as Leslie Pool in “ <a>10 Items or Less,</a> ” from Sony on TBS for three seasons, Ozzie on “
+                <a href="">JailBait</a> ” for Sony at Crackle and recently starred as Sheriff Hoyle on Hulu’s original
+                comedy western “ <a href=""> Quickdraw</a>” for two seasons. Lehr co-created, wrote and executive
+                produced all three series.
+              </p>
+              <p>
+                Lehr is widely known as the <a href="">original Geico caveman</a> and has appeared in numerous TV series
+                including “Friends” and “Jesse” at NBC, and hosted “I”m A Celebrity… Get Me Out of Here!” at ABC.
+              </p>
+              <p>
+                Under the banner <a href="">Howler Monkey Productions,</a> Lehr and partner Nancy Hower created/wrote/
+                produced pilots for Fox (“Team McPhearson”, animated), TBS (“John Lehr’s Movie Club”, talk/ variety) and
+                Comedy Central (“Let it Ride”, 1/2 hour live action comedy).
+              </p>
+              <p>
+                Script/development deals include “Nature/Nurture” (NBC), “Empyrean Way” (Fox), “Retreat” (NBC), “The
+                Loop” (HBO), Troubadour (MTV), “Life on Mars” (Sony/BBC), King of Beers” (EUE/Sokolow), and “Saltwater
+                Summer” (Disney).
+              </p>
+              <div>
+                <div class="button-wrap">
+                  <a href="">John's full BIO</a>
+                  <a href="">John's Television Appearances</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact-now-section">
+      <div class="container">
+        <div class="row">
+          <h3>
+            Looking to break in or break to the next level of your entertainment career?
+            <br class="d-none d-lg-block" />
+            Are you an established artist looking to expand into producing, writing and show-running?
+            <br class="d-none d-lg-block" />Have you created a great project but don’t know what to do next?
+          </h3>
+          <a href="">Let's sell it!</a>
+        </div>
+      </div>
+    </section>
+    <section class="coaching-testimonial">
+      <div class="container">
+        <div class="row section-coach__second-row">
+          <div class="section-coach__profile-side">
+            <span class="section-coach__testimonial section-coach__testimonial-1 active">
+              <img src="../wp-content/testimonials_img_2.png" alt="" />
+            </span>
+            <span class="section-coach__testimonial section-coach__testimonial-2">
+              <img src="../wp-content/testimonials_img_1.png" alt="" />
+            </span>
+          </div>
+          <div class="section-coach__middle-line"></div>
+          <div class="section-coach__content-side">
+            <div class="section-coach__slide section-coach__slide-1 active">
+              <span class="section-coach__up-coma">
+                <img src="../wp-content/up_coma.png" alt="" />
+              </span>
+              <p class="coaching-testimonial-text">
+                We couldn't be more thrilled that John is on our team! He is an expert in his field as creator and his
+                knowledge is invaluable. What he has taught us about creating, pitching, logistics, and negotiating in
+                the short time we've worked together would have taken us years to figure out on our own - and these
+                things are not taught in school! The best part - he TRULY wants us to succeed in this business! John has
+                consistently proven that he will do anything he can to support us in selling our first episodic series.
+                So much so - we'd like to give him a producer credit when that happens! Just you wait! John - you'll
+                never get rid of us!
+              </p>
+              <div class="section-coach__client-details">
+                <h4 class="coaching-testimonial-user">Meredyth Yund and Garrett Bennett</h4>
+                <p class="coaching-testimonial-job">Echo Rock Productions</p>
+              </div>
+            </div>
+            <div class="section-coach__slide section-coach__slide-2">
+              <span class="section-coach__up-coma">
+                <img src="../wp-content/up_coma.png" alt="" />
+              </span>
+              <p class="coaching-testimonial-text">
+                Working with John is an absolute joy, he is very talented and has accomplished a lot in his career, but
+                he is always willing to help in anyone in need of his expertise at any level. I highly recommend him as
+                you will be getting the best mentor out there
+              </p>
+              <div class="section-coach__client-details">
+                <h4 class="coaching-testimonial-user">David Johnson</h4>
+                <p class="coaching-testimonial-job">Screenwriter</p>
+              </div>
+            </div>
+          </div>
+          <div class="section-coach__controls">
+            <a class="carousel-control-prev" id="prev-slide" href="#quote-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" id="next-slide" href="#quote-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const slides = Array.from(document.querySelectorAll(".section-coach__content-side > .section-coach__slide"));
+          const testimonials = Array.from(
+            document.querySelectorAll(".section-coach__profile-side > .section-coach__testimonial")
+          );
+          const prevButton = document.getElementById("prev-slide");
+          const nextButton = document.getElementById("next-slide");
+          let currentIndex = 0;
+          let slideInterval;
+
+          function updateSlider(direction) {
+            slides.forEach((slide, i) => {
+              slide.classList.remove("active", "exit-left", "exit-right");
+
+              if (i === currentIndex) {
+                slide.classList.add("active");
+              } else {
+                // Apply exit-right class for inactive slides to animate in the desired direction
+                slide.classList.add("exit-right");
+              }
+            });
+
+            testimonials.forEach((testimonial, i) => {
+              testimonial.classList.toggle("active", i === currentIndex);
+            });
+          }
+
+          function goToNextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateSlider("next");
+          }
+
+          function goToPreviousSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            updateSlider("prev");
+          }
+
+          function startAutoSlide() {
+            slideInterval = setInterval(goToNextSlide, 5000);
+          }
+
+          function stopAutoSlide() {
+            clearInterval(slideInterval);
+          }
+
+          prevButton.addEventListener("click", () => {
+            stopAutoSlide();
+            goToPreviousSlide();
+            startAutoSlide();
+          });
+
+          nextButton.addEventListener("click", () => {
+            stopAutoSlide();
+            goToNextSlide();
+            startAutoSlide();
+          });
+
+          // Initialize slider
+          updateSlider("next");
+          startAutoSlide();
+        });
+      </script>
+    </section>
+    <section class="coaching-advicer">
+      <div class="container">
+        <div class="row">
+          <h2>Career Advice/Coaching</h2>
+          <p>
+            Affordable entertainment career advice/coaching catered to YOUR specific needs. Let me help you help me help
+            you which will probably help me which could then end up helping you help someone else who might then help
+            me.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="packages-rates">
+      <div class="container">
+        <div class="row">
+          <h2>Packages & Rates</h2>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <p class="amount">$300</p>
+              <div class="line"></div>
+              <ul>
+                <li>Review of your materials</li>
+                <li>In-person Consultation</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <p class="amount">$400</p>
+              <div class="line"></div>
+              <ul>
+                <li>Review of your materials</li>
+                <li>In-person Consultation</li>
+                <li>plus weekly phone follow ups for 4 weeks</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <p class="amount">$375</p>
+              <div class="line"></div>
+              <ul>
+                <li>Monthly retainer (min. 6 months)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <p class="amount">$800</p>
+              <div class="line"></div>
+              <ul>
+                <li>Unlimited messaging, calls, resources and in-person Support</li>
+              </ul>
+            </div>
+          </div>
+          <p>I live in Los Angeles but we can Skype if you live elsewhere</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-form">
+      <div class="section-form__side section-form__side-img">
+        <img src="../wp-content/home_contact_us.jpg" alt="" />
+      </div>
+      <div class="section-form__side section-form__form-contact">
+        <h2>For more information and to book john</h2>
+        <div class="section-form__contact-form">contact form here....</div>
+      </div>
+    </section>
+    <footer>
+      <section class="section-footer">
+        <div class="container">
+          <div class="row">
+            <div class="section-footer__top">
+              <div class="row justify-content-between">
+                <div class="col-6 section-footer__logo-wrap">
+                  <a class="footer-logo" href="https://johnlehr.com/"
+                    ><img src="https://johnlehr.com/wp-content/themes/johnlehr/img/global/footer_logo.png"
+                  /></a>
+                  <a href="mailto:john@howler.tv" class="section-footer__mail">john@howler.tv</a>
+                </div>
+                <div class="col-6 section-footer__media-wrap" id="social-media-wpr">
+                  <div class="section-footer__righ-top-container">
+                    <small>Follow us!</small>
+                    <div>
+                      <span id="media_image-6" class="widget widget_media_image"
+                        ><a href="https://twitter.com/@johnlehr"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/twt_icon.png"
+                            class="image wp-image-164 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-2" class="widget widget_media_image"
+                        ><a href="https://www.instagram.com/johnhenryhoyle/"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/instagram_icon.png"
+                            class="image wp-image-165 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-3" class="widget widget_media_image"
+                        ><a href="https://www.facebook.com/JohnLehrFanpage"
+                          ><img
+                            width="25"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/fb_icon.png"
+                            class="image wp-image-166 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a></span
+                      ><span id="media_image-5" class="widget widget_media_image"
+                        ><a href="https://www.youtube.com/channel/UCyhBmEMJ0q4OQ43vDcFNhUg"
+                          ><img
+                            width="35"
+                            height="25"
+                            src="https://johnlehr.com/wp-content/uploads/2018/09/youtube_icon.png"
+                            class="image wp-image-178 attachment-full size-full"
+                            alt=""
+                            style="max-width: 100%; height: auto"
+                            decoding="async"
+                            loading="lazy" /></a
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section-footer__bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 justify-content-center d-flex">
+                    <ul id="menu-footer-navigation" class="section-footer__navigation-ul">
+                      <li
+                        id="menu-item-748"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-733 current_page_item menu-item-748"
+                      >
+                        <a href="" aria-current="page" class="active">Home</a>
+                      </li>
+                      <li
+                        id="menu-item-232"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-232"
+                      >
+                        <a href="">Television/Film</a>
+                      </li>
+                      <li
+                        id="menu-item-177"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"
+                      >
+                        <a href="">Stand Up Comedy</a>
+                      </li>
+                      <li
+                        id="menu-item-759"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-759"
+                      >
+                        <a href="">Cold Sober Comedy</a>
+                      </li>
+                      <li
+                        id="menu-item-85"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-85"
+                      >
+                        <a href="">Coaching</a>
+                      </li>
+                      <li
+                        id="menu-item-769"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-769"
+                      >
+                        <a href="">Bio</a>
+                      </li>
+                      <li
+                        id="menu-item-597"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-597"
+                      >
+                        <a href="">Press</a>
+                      </li>
+                      <li
+                        id="menu-item-679"
+                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-679"
+                      >
+                        <a href="">Sitemap</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        navLinks.forEach((link) => {
+          link.addEventListener("click", function () {
+            navLinks.forEach((link) => link.classList.remove("active"));
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

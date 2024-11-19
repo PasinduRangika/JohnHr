@@ -62,7 +62,7 @@ h6 {
 
 .navbar {
   padding: 20px;
-  background-color: #ebeff8;
+  /* background-color: #ebeff8; */
   border: none;
   margin: 0;
   z-index: 99;
@@ -1048,6 +1048,7 @@ h6 {
   margin-bottom: 0px;
   padding-bottom: 15px;
   text-align: center;
+  line-height: 150%;
 }
 .contact-now-section h1 {
   font-size: 36px;
@@ -1076,4 +1077,120 @@ h6 {
 
 .section-testimonials__row.v2 {
   margin-bottom: 100px;
+}
+/* coaching-section */
+.section-coachinghero {
+  margin-top: -98px;
+  position: relative;
+}
+.section-coachinghero .section-coaching-img {
+  width: 100%;
+}
+.section-coachinghero .hero-title {
+  position: absolute;
+  top: 200px;
+  width: fit-content;
+}
+.section-coachinghero .hero-title h1 {
+  font-size: 72px;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: #1c47aa;
+  margin-top: 20px;
+}
+.section-coachinghero .hero-des {
+  position: absolute;
+  top: 480px;
+  width: fit-content;
+}
+.section-coachinghero .hero-des p {
+  font-size: 20px;
+  color: #0d184f;
+  font-weight: 600;
+}
+.coaching-content {
+  padding: 50px 0px;
+}
+.coaching-content h2 {
+  color: #0d184f;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+.coaching-content p {
+  color: #4a4a4a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.coaching-content p a {
+  text-decoration: none;
+}
+.coaching-content .button-wrap {
+  display: flex;
+  gap: 20px;
+}
+.coaching-content .button-wrap a {
+  padding: 10px 15px;
+  background-color: #fbc02d;
+  color: #0d184f !important;
+  font-weight: 600;
+  margin-top: auto;
+  width: fit-content;
+  margin-top: 16px;
+  text-decoration: none;
+}
+.coaching-content .img-wrap img {
+  width: 400px;
+  height: auto;
+}
+/* coaching-testimonial */
+.coaching-testimonial {
+  padding-bottom: 30px;
+}
+.coaching-testimonial .coaching-testimonial-text {
+  margin-bottom: 20px;
+  color: #4a4a4a;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.coaching-testimonial .coaching-testimonial-user {
+  color: #0d184f;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.coaching-testimonial .coaching-testimonial-job {
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+.coaching-testimonial .carousel-control-prev-icon,
+.coaching-testimonial .carousel-control-next-icon {
+  filter: invert(50%);
+}
+
+.coaching-advicer {
+  background-color: #ebeff9;
+  padding: 50px 0px;
+}
+.coaching-advicer h2 {
+  font-size: 36px;
+  line-height: 1.2;
+  color: #0d184f;
+  font-weight: 600;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.coaching-advicer p {
+  color: #0d184f;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  line-height: 150%;
+  text-align: center;
 }
