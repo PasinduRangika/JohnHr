@@ -54,4 +54,39 @@
   .coldsober-graycolor-section .des {
     font-size: 16px;
   }
+  .section-coachinghero .hero-title {
+    top: 100px;
+  }
+  .section-coachinghero .hero-des {
+    position: absolute;
+    top: 300px;
+    width: fit-content;
+  }
+  .section-coachinghero .hero-title h1 {
+    font-size: 48px;
+  }
+  .section-coachinghero {
+    margin-top: 0px;
+    position: relative;
+  }
+  .coaching-content .img-wrap img {
+    margin-bottom: 30px;
+  }
+  .coaching-content h2 {
+    text-align: center;
+  }
+  .coaching-content p {
+    text-align: center;
+  }
+  .coaching-content .button-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .coaching-content .button-wrap a {
+    text-align: center;
+  }
+  .packages-rates .card {
+    margin-bottom: 30px;
+  }
 }

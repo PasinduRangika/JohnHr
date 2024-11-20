@@ -72,4 +72,15 @@
     position: absolute;
     top: 400px;
   }
+  .section-coachinghero .hero-title h1 {
+    font-size: 60px;
+  }
+  .section-coachinghero .hero-title {
+    top: 150px;
+  }
+  .section-coachinghero .hero-des {
+    position: absolute;
+    top: 400px;
+    width: fit-content;
+  }
 }

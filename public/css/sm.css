@@ -152,4 +152,15 @@
   .coldsober-content-section .button-wrap a {
     text-align: center;
   }
+  .section-coachinghero .hero-title h1 {
+    font-size: 30px;
+  }
+  .section-coachinghero .hero-title {
+    top: 10px;
+  }
+  .section-coachinghero .hero-des {
+    position: absolute;
+    top: 150px;
+    width: fit-content;
+  }
 }
