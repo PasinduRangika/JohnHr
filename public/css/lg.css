@@ -86,4 +86,12 @@
   .bio-content-section .content-row {
     padding: 25px 10px;
   }
+  .section-coachinghero .hero-title.v3 {
+    top: 90px;
+    width: fit-content;
+  }
+  .section-coachinghero {
+    margin-top: -88px;
+    position: relative;
+  }
 }

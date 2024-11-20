@@ -168,4 +168,10 @@
     top: 50px;
     width: fit-content;
   }
+  .post-section .artical-name {
+    font-size: 12px;
+  }
+  .post-section .iframe-video {
+    width: 100%;
+  }
 }

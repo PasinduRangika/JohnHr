@@ -101,4 +101,15 @@
     padding-top: 30px;
     text-align: center;
   }
+  .section-coachinghero .hero-title.v3 {
+    top: 10px;
+    width: fit-content;
+  }
+  .post-section .post-list {
+    padding: 35px 10px 15px 10px;
+  }
+  .post-section .releated-list {
+    padding: 35px 10px 15px 10px;
+    padding-top: 30px;
+  }
 }
