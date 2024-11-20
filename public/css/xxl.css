@@ -1363,6 +1363,10 @@ h6 {
   color: #4a4a4a;
   font-size: 15px;
 }
+.post-section .des a {
+  color: #1c47aa;
+  text-decoration: none;
+}
 .post-section .read-story {
   color: #1c47aa;
   text-decoration: none;
