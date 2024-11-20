@@ -83,4 +83,7 @@
     top: 400px;
     width: fit-content;
   }
+  .bio-content-section .content-row {
+    padding: 25px 10px;
+  }
 }
