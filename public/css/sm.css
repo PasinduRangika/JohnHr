@@ -174,4 +174,7 @@
   .post-section .iframe-video {
     width: 100%;
   }
+  .section-banner__img-wrap {
+    margin-top: 0px;
+  }
 }
